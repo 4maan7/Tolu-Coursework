@@ -1,0 +1,253 @@
+/* importing fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;1,100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+
+:root{
+    --primary-color: #546887;
+    --text-color: #727171;
+    --hyperlink-color: pink;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    font-family: Fira Sans, sans-serif;
+    background-color: #6f798c;
+    color: #E1D9D1;
+}
+
+/* general styles */
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+table,th,td{
+    border: 1px solid var(--primary-color) ;
+        background-color:#3f444e ;
+        text-align: center;
+        font-weight: 300;
+        grid-row: auto;
+}
+
+
+.description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+
+}
+
+.title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.subtitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.subtitle_caption{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.4rem;
+}
+
+.hyperlinks{
+    text-decoration: none;
+}
+.hyperlinks:hover{
+    color: var(--hyperlink-color);
+}
+/* layouts */
+
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem; /* root elements font-size */
+    background: #464c59;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.group1{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.group3{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: #3f444e;
+    padding: 1rem;
+}
+
+.group3 > div{
+    flex: 1;
+}
+
+
+.profile {
+    grid-column: 1/ -1;
+    margin-bottom: 2rem;
+}
+
+/*profile*/
+
+.profile_container{
+    display: flex;
+    gap: 2rem;
+}
+
+.profile_profileimg{
+    max-width: 250px;
+
+}
+
+.profile_name_lastname{
+    color: var(--primary-color);
+}
+
+.profile_title{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.download_button{
+    margin-top: 0,3rem;
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+}
+
+.download_button:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.download_logo{
+    margin-top: 1rem;
+    margin-right: -2rem;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    color: var(--text-color);
+}
+
+.skillsList{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+.personal_Statement{
+    grid-column: 1/ -1;
+    background-color: #3f444e;
+    padding: 1.5rem;
+    margin-top: -3rem;
+    margin-right: 1.5rem;
+}
+
+.education{
+    margin-top: 1rem;
+}
+
+.education_list{
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+.education_table{
+    border: 3px solid var(--primary-color) ;
+    background-color:#3f444e ;
+    text-align: center;
+    font-weight: 300;
+    grid-row: auto;
+        
+}
+
+.volunteering{
+    margin-top: 1rem;
+}
+
+.volunteering_list{
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+.work_experience_list{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+.interest_items{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.interest_item{
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.socials_data{
+    margin-top: 1rem;
+}
+
+.social_obj{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    color: var(--text-color);
+    justify-content: flex-start;
+}
+
+.social_obj:hover{
+    color: var(--hyperlink-color);
+}
+
+.social_obj svg{
+    width: 1.3rem;
+}
